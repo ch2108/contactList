@@ -15,7 +15,11 @@ module.exports = {
         query: {
           presets: ['env', 'react']
         }
-      }
+      },
+      { test: /\.css$/, loader: "style-loader!css-loader" },
+      { test: /\.png$/, loader: "url-loader?limit=100000" },
+      { test: /\.(woff2?|svg)$/, loader: 'url-loader?limit=10000' },
+      { test: /\.(ttf|eot|jpg)$/, loader: 'file-loader' }
     ]
   }
 }
