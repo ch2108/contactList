@@ -17,7 +17,7 @@ export default function ContactTable(props){
       <thead>
         <tr>
           <th>Name</th>
-          <th>phoneNumber</th>
+          <th>Phone Number</th>
         </tr>
       </thead>
       <tbody>
